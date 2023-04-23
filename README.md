@@ -5,13 +5,13 @@ Apuntes de Configuracion de **Servidor en Linux**, todos las distribuciones prob
 - Autor: Alexander Jair Rojas Paria
 --------------
 
-# 📱 [Servidores Linux](https://platzi.com/cursos/linux/)
+# 📱 Servidores Linux
 
 
-## **Roles de un Administrador**
+## Roles de un Administrador
 
 
-#### **Habilidades clave:**
+#### Habilidades clave:
 
 
 
@@ -150,6 +150,176 @@ Es donde el usuario directamente interactúa. Es la capa donde trabajan nuestros
 
 
 ## **Sistemas operativos y distribuciones**
+
+Una distribución de Linux es una variante de Linux creada por una organización o comunidad específica que toma el kernel de Linux y lo combina con otras aplicaciones y herramientas de software para crear un sistema operativo completo. Las distribuciones de Linux pueden variar en características, propósitos y enfoques.
+
+Hay muchas distribuciones de Linux disponibles, y algunas de las más populares son:
+
+**Rolling Release:**
+
+*Arch Linux \
+*Gentoo \
+*Solus \
+*Manjaro \
+*openSUSE Tumbleweed
+
+**Fixed Release:**
+
+*Debian \
+*Ubuntu \
+*CentOS \
+*Fedora \
+*Red Hat Enterprise Linux (RHEL)
+
+Las **distribuciones de Rolling Release** reciben actualizaciones continuas y no tienen versiones específicas. Las actualizaciones se entregan a medida que se lanzan y se prueban. 
+
+Las **distribuciones de Fixed Release**, por otro lado, tienen una versión específica que se lanza en un momento determinado y reciben actualizaciones de seguridad y mantenimiento regulares, pero no se actualizan con nuevas características de forma regular.
+
+
+## **¿Dónde viven Servidores?**
+
+Las ventajas que tenemos con un servicio en la nube, bien sea como persona natural o como empresa, es ahorrar dolores de cabeza con daños en los discos duros, tener preocupación por realizar copias de seguridad de los archivos de forma constante, y preocupación por recuperación de datos. \
+los servicios en la nube, son realmente eficientes y tienen herramientas con gran poder que nos facilita mucho la vida.
+
+
+
+* Alojamiento: \
+**On Premise: ** Todo el hardware y software del servidor es alojado y mantenido por la organización. \
+**Cloud: **Es una empresa que ofrece la arquitectura y estructura, y yo solo me encargo de administrar el servidor. o Nube Pública: o Nube Privada: Todos los servicios pueden estar en otro lugar, pero los recursos utilizados por una empresa no pueden ser compartidos con otra empresa, por ejemplo, un disco duro dedicado alojar datos de la empresa. \
+**Hibrid (Hídrida):  **Es una combinación de los servicios premise y cloud. Data Center: lugar para almacenar servidores.
+
+
+## Formas de montar un servidor
+
+🚀 Hay varias formas de montar un servidor Linux, dependiendo de las necesidades y recursos de cada organización. Algunas de las formas comunes de montar un servidor Linux son las siguientes:
+
+
+
+1. Servidores físicos: Consiste en instalar Linux en un servidor físico en las instalaciones de la organización. Este enfoque puede ser más adecuado para organizaciones que tienen un alto nivel de control sobre el hardware y la seguridad del servidor.
+2. Servidores virtuales: Consiste en instalar Linux en una máquina virtual que se ejecuta en un servidor físico. Este enfoque puede ser más adecuado para organizaciones que necesitan flexibilidad y escalabilidad, pero que no tienen los recursos para adquirir y administrar un servidor físico.
+3. Servidores en la nube: Consiste en instalar Linux en un servidor virtual alojado en la nube de un proveedor de servicios en la nube. Este enfoque puede ser más adecuado para organizaciones que desean acceso remoto, escalabilidad y flexibilidad sin tener que administrar su propio hardware.
+4. Contenedores: Consiste en utilizar tecnología de contenedores para alojar aplicaciones en Linux. Los contenedores pueden ser más eficientes que las máquinas virtuales porque comparten recursos de hardware, lo que significa que pueden alojar más aplicaciones en un solo servidor.
+5. Kubernetes: Consiste en utilizar una plataforma de orquestación de contenedores como Kubernetes para gestionar y escalar contenedores en un clúster de servidores Linux.
+
+Cada uno de estos enfoques tiene sus propias ventajas y desventajas, y la elección depende de las necesidades específicas de la organización, como la escalabilidad, la flexibilidad y el control sobre el hardware y la seguridad del servidor.
+
+
+## **Instalar Virtualbox en Linux 🐧**
+
+
+### **Si tú, como yo, eres usuario Ubuntu te dejaré una pequeña guía de cómo instalarlo.**
+
+(Si utilizas otra distribución, puedes expandir este aporte con tu distribución y cómo instalar virtualbox).
+
+
+
+1. Primer paso, debes dirigirte a la página oficial de [VirtualBox](https://www.virtualbox.org/).
+1. Debes darle click al botón gigante que te aparece para instalar VirtualBox y te redirige a otra página.
+
+Nota: es muy importante tener en cuenta que si tu país no cumple con los requisitos políticos para adquirir servicios de Oracle, te recomiendo utilizar una VPN para poder descargar este programa. (🇻🇪🇨🇺🇳🇮)
+
+Una vez estándo en la lista, debes elegir la opción que dice: Linux distributions
+
+
+
+1. Ahí podemos observar una lista de distribuciones y debemos elegir la distribución que tengamos; en mi caso es Ubuntu y su versión es la 22.04
+1. Debemos esperar a que el archivo se descargue.
+2. Una vez descargado el archivo, en este caso es un archivo “deb”. Esto quiere decirnos que el gestor de paquetes que utilizamos es el mismo que el de Debian (deb) entonces podemos hacer la instalación gráfica con click e instalar o por la terminal. Tú decides cuál crees que te sea más fácil.
+1. Para instalarla de forma gráfica, solamente debes pulsar _click derecho > abrir con otra aplicación > Instalar software_ Y te abrirá una forma gráfica de instalar.
+
+7.1. O también la puedes instalar por la terminal con este comando \
+`sudo dpkg -i virtualbox-7.0 \
+`Por supuesto el nombre del paquete debe de ser idéntico a como está descargado.
+
+
+#### **Espero les sirva y les sea de mucha utilidad. 👍**
+
+
+## **Instalar Ubuntu Server ISO**
+
+[https://ubuntu.com/download/server](https://ubuntu.com/download/server)
+
+Usar Virtual Box
+
+
+## **Error 1 al instalar**
+
+vbo error kernel driver not installed (rc=-1908) virtualbox
+
+solución:
+
+actualizamos el sistema
+
+**sudo apt-get update \
+sudo apt-get upgrade**
+
+instalamos los paquetes esenciales del kernel
+
+**sudo apt-get install build-essential**
+
+instalamos las cabeceras del kernel
+
+de nuestro kernel que nos lo indica con :** uname -r**
+
+**sudo apt-get install linux-headers-$(uname -r)**
+
+limpiamos
+
+**sudo apt autoremove**
+
+ejecutamos la autoconfiguración de vbox como administrador
+
+**sudo /sbin/vboxconfig**
+
+Y ya tenemos todos los problemas resueltos
+
+
+## **Configuración básica para un servidor remoto**
+
+Comandos: \
+ssh: lo usamos para confirmar que tengamos instalado openssh en el sistema, en caso de no estar instalado podemos instalarlo con el comando:
+
+
+```
+sudo apt install openssh
+```
+
+
+Para el caso de ubuntu server, o para el caso de RHEL con el comando:
+
+
+```
+sudo dnf install openssh
+```
+
+
+systemctl status sshd : Para verificar que el proceso de ssh este activo y corriendo en el sistema (si no les funcione agréguenle la palabra sudo al principio del comando para abrirlo con permisos de superusuario)
+
+ip address : nos da datos sobre nuestros dispositivos de red, incluyendo la IP interna del servidor.
+
+Ahora, para conectarse al servidor desde un dispositivo en la misma red, se puede usar el comando:
+
+
+```
+ssh username@localip
+Ejemplo:
+ssh username@192.168.1.53
+```
+
+
+Desde la PowerShell de Windows o la consola del sistema operativo que estés usando. \
+ \
+EXTRA
+
+En caso de querer acceder remotamente a un servidor, el comando es el mismo, solo que ahora en vez de usar la ip local se usaría la IP pública, la cual se puede ver desde un navegador en internet buscando myip estando conectado a la misma red del servidor o desde el servidor usando algún comando como lo puede ser el siguiente:
+
+
+```
+curl ifconfig.me
+```
+
+
+Es importante tener en cuenta que para poder tener este acceso, se debe tener abierto a la red el puerto de internet número 22, adicionalmente es una buena práctica utilizar un firewall para que solo ciertas IPs puedan conectarse al servidor y así evitar accesos no autorizados.
 
 
 ---
