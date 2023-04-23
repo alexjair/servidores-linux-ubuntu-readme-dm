@@ -1,5 +1,8 @@
 # Servidores-Linux-Ubuntu-Readme-DM
 
+Apuntes de Configuracion de **Servidor en Linux**, todos las distribuciones probadas, Ububtu server.
+
+- Autor: Alexander Jair Rojas Paria
 --------------
 
 # 📱 [Servidores Linux](https://platzi.com/cursos/linux/)
