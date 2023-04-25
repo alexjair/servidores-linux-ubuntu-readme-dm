@@ -5,6 +5,60 @@ Apuntes de Configuracion de **Servidor en Linux**, todos las distribuciones prob
 - Autor: Alexander Jair Rojas Paria
 --------------
 
+<!-- Output copied to clipboard! -->
+
+<!-----
+
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 0
+* WARNINGs: 0
+* ALERTS: 12
+
+Conversion time: 4.798 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β34
+* Mon Apr 24 2023 20:15:18 GMT-0700 (PDT)
+* Source doc: Servidores Linux
+* Tables are currently converted to HTML tables.
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+
+WARNING:
+You have 7 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 12.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+<a href="#gdcalert6">alert6</a>
+<a href="#gdcalert7">alert7</a>
+<a href="#gdcalert8">alert8</a>
+<a href="#gdcalert9">alert9</a>
+<a href="#gdcalert10">alert10</a>
+<a href="#gdcalert11">alert11</a>
+<a href="#gdcalert12">alert12</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
 # 📱 Servidores Linux
 
 
@@ -523,9 +577,32 @@ En general, el árbol de directorios en Linux está diseñado para proporcionar 
 
 Tipos de permisos
 
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image1.jpg "image_tooltip")
+ \
 Permisos y atributos
 
+
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image2.jpg "image_tooltip")
+ \
 Permisos en sistema de archivos
+
+
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image3.jpg "image_tooltip")
+
+
 
 ## **¿Qué es un manejador de paquetes?**
 
@@ -750,6 +827,15 @@ Ver los procesos con información en caliente
 **top**
 
 **htop  **(versión mejorada)
+
+
+
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image4.png "image_tooltip")
+
+
 
 ## **Manejo de procesos**
 
@@ -1141,6 +1227,14 @@ En otra terminal ejecutar, para ver los ejemplos de crontap
 
 **less /etc/crontab**
 
+
+
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image5.png "image_tooltip")
+
+
 Continuar editando el crontap:
 
 
@@ -1167,7 +1261,10 @@ ver mi cron status
 ---
 
 
-# **💻 Manejo de Recursos Servidor Linux**
+# 💻 Manejo de Recursos Servidor Linux
+
+
+# **Arranque del sistema**
 
 **El SO es almacenado en memoria**
 
@@ -1223,3 +1320,804 @@ Cuando se enciende un ordenador, la **BIOS **se ejecuta y verifica que todos los
 Una vez que el **bootloader **ha cargado el sistema operativo, lo primero que se ejecuta es el **kernel**, que es el encargado de administrar los recursos del sistema. Cuando el **kernel **ha cargado, se ejecuta **Init**, que es el primer proceso que realiza el sistema operativo. Este se encarga de iniciar todos los procesos necesarios para el correcto funcionamiento del sistema operativo.
 
 Luego, cuando el **sistema operativo** ha cargado sus procesos, se carga el entorno gráfico, que es la **interfaz **que los nosotros como usuarios vemos y con la que interactuamos.
+
+
+## **Grupos y Usuarios en Linux**
+
+**Usuario:** \
+Nos permite separar las responsabilidades y permisos de acciones en el sistema. Dependiendo los permisos que tengan son las acciones que podrán ejecutar.
+
+**Características:** \
+	- UID: Identificador único del sistema \
+	- GIDs: uno o más IDs que los relacionan a un grupo \
+Directorio Home: 
+
+está en la ruta 
+
+**/home/&lt;username>** \
+Archivos 
+
+**/etc/passwd:** contiene info de nuestros usuarios en formato **name:password:UID:GID:GECOS:directory:shell** \
+	- GECOS: info extra \
+	- SHELL: la shell de inicio \
+
+
+**/etc/shadow**: contraseña de forma cifrada.
+
+
+
+* Si contiene un asterisco ***** significa que jamas tuvo una contraseña asignada
+* Si contiene un símbolo de exclamación **!** ha sido bloqueado
+
+Grupos: Agrupan usuario y conjunto de permisos, estos son muy usados por servicios como demonios, docker, postgres, etc
+
+
+# **Grupos y usuarios**
+
+
+## **Manejo Usuarios en Linux**
+
+Con el comando se bloquee a un usuario:
+
+**usermod --lock user**
+
+**ls**: listar directorio actual
+
+**ls /home:** listar un directorio específico
+
+**if config:** Configuración de red
+
+Conexión por ssh
+
+**ssh alexjair@192.168.1.57** 
+
+Ver los usuarios
+
+**cat /etc/passwd:** ver archivo donde estan los usuarios
+
+**less /etc/shadow**: ver usuarios con su contraseña de forma cifrada
+
+**sudo** **less /etc/shadow **(Modo root) (podemos usar tanto less o cat)
+
+press “q” para salir
+
+Manejo de Usuarios
+
+Solo el Usuario Root puede agregar usuarios.
+
+**su root**: cambiar a usuario admin
+
+**pwd**: nombre del directorio actual
+
+Agregar usuario;
+
+**adduser username**: agregar nuevo usuario
+
+**adduser {--Nombre-usuario--}**
+
+
+
+* Ejemplo: **adduser fulano**
+* Agrega el Password:
+* y Completa la información.
+
+**whoami:** ver usuario actual logueado.
+
+Ver la info usuario
+
+**id:** ver info del usuario (uid,gid,groups)
+
+**id -u**
+
+**id -um**
+
+Ingresamos como root:
+
+**su root**
+
+Cambiamos de otros usuario:
+
+**chfn {username}:** cambiar información del usuario
+
+ver la info. de usuario
+
+**less /etc/passwd**
+
+iniciar la sesión SHH con fulano
+
+**ssh fulano@192168.1.53**
+
+Bloquear a uusario
+
+**usermod --lock username**: bloquear usuario (accesos futuros)
+
+ver si se bloqueo fulano
+
+**cat /etc/shadow**
+
+terminar el bloqueo o desbloquear
+
+**usermod --unlock {username}** 
+
+Ver procesos para kill el proceso ssh de Fulano
+
+**htop:** ver todos los procesos actuales (podemos ver los procesos referentes a un usuario) 
+
+	ubicamos el proceso.
+
+→con **F9 **matamos el proceso
+
+
+
+<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image6.png "image_tooltip")
+
+
+ \
+Por ejemplo los que aparecen con ssh
+
+**sudo deluser username**: eliminar un usuario (aunque la carpeta en home permanece)
+
+**sudo deluser {username}**
+
+**rm -rf /home/username/**: eliminar un directorio como la carpeta del usuario
+
+Ver los usuarios que tengo
+
+**ls /home**
+
+
+## **Manejo de grupos**
+
+Para manejar grupos de usuarios en Linux, se pueden seguir los siguientes pasos:
+
+
+
+1. Verificar los grupos existentes: se puede usar el comando 
+
+    **cat /etc/group** 
+
+
+    para mostrar una lista de los grupos existentes en el sistema.
+
+2. Crear un nuevo grupo: se puede utilizar el comando 
+
+    **sudo groupadd &lt;nombre_del_grupo>** 
+
+
+    para crear un nuevo grupo en el sistema.
+
+3. Agregar usuarios a un grupo: se puede utilizar el comando 
+
+    **sudo usermod -a -G &lt;nombre_del_grupo> &lt;nombre_de_usuario>** 
+
+
+    para agregar un usuario existente al grupo.
+
+4. Verificar los usuarios de un grupo: se puede utilizar el comando 
+
+    **id &lt;nombre_del_grupo>** 
+
+
+    para mostrar una lista de usuarios que pertenecen a un grupo.
+
+5. Eliminar un grupo: se puede utilizar el comando 
+
+    **sudo groupdel &lt;nombre_del_grupo>** 
+
+
+    para eliminar un grupo existente en el sistema.
+
+6. Cambiar los permisos de un archivo o directorio para un grupo: se puede utilizar el comando 
+
+    **sudo chgrp &lt;nombre_del_grupo> &lt;ruta_al_archivo_o_directorio>** 
+
+
+    para cambiar el grupo propietario de un archivo o directorio. Luego se puede utilizar el comando 
+
+
+    **sudo chmod g+&lt;permisos> &lt;ruta_al_archivo_o_directorio>** 
+
+
+    para otorgar permisos específicos para el grupo propietario.
+
+7. Cambiar el nombre de un grupo: se puede utilizar el comando** sudo groupmod -n &lt;nuevo_nombre> &lt;nombre_actual>** para cambiar el nombre de un grupo existente.
+8. Verificar los permisos de un grupo: se puede utilizar el comando 
+
+    **sudo getfacl /ruta/al/archivo-o-directorio** 
+
+
+    para verificar los permisos de un archivo o directorio. En la salida del comando, se puede observar información sobre los permisos de usuario, grupo y otros.
+
+9. Agregar usuarios a un grupo secundario: se puede utilizar el comando 
+
+    **sudo usermod -a -G &lt;nombre_del_grupo_secundario> &lt;nombre_de_usuario>** 
+
+
+    para agregar un usuario existente a un grupo secundario.
+
+10. Eliminar usuarios de un grupo: se puede utilizar el comando 
+
+    **sudo gpasswd -d &lt;nombre_de_usuario> &lt;nombre_del_grupo>** 
+
+
+    para eliminar un usuario existente de un grupo.
+
+11. Verificar los permisos de un grupo específico: se puede utilizar el comando sudo visudo para abrir el archivo de configuración sudoers, y luego agregar la siguiente línea para permitir que los usuarios del grupo tengan permisos de superusuario: **%&lt;nombre_del_grupo> ALL=(ALL) ALL**.
+12. Verificar los grupos de un usuario: se puede utilizar el comando 
+
+    **groups &lt;nombre_de_usuario>** 
+
+
+    para mostrar una lista de grupos a los que pertenece un usuario específico.
+
+
+Manejo:
+
+Archivo de los grupos, para ver en:
+
+**less /etc/group**
+
+buscar que usuario está en que grupo,alexjair
+
+**less /etc/group | grep codevars**
+
+Ver los grupos donde estoy, si mi sesión está iniciada.
+
+**groups**
+
+Ver todos los usuarios que pertenecen a SUDO
+
+**getent group {-nombre-del-grupo}**
+
+**getent group sudo**
+
+<span style="text-decoration:underline;">Manejo de Grupos</span>:
+
+Crear un grupo:
+
+**groupadd {nombre_grupo}**
+
+**groupadd amigos**
+
+Ver los grupos
+
+**less /etc/group**
+
+Modificar nombre de Grupo
+
+**groupmod -n {name-new} {name-antiguo}**
+
+**groupmod -n friends amigos **
+
+Acceder usuario root para evitar el password
+
+**su root**
+
+ver los cambios
+
+**cat /etc/group**
+
+Crear carpeta compartida con los usuarios
+
+agregar un nuevo usuario -fulano
+
+**adduser fulano**
+
+**adduser perengano**
+
+Acceder al home como fulano
+
+**su fulano**
+
+**cd**
+
+**pwd (para ver si estamos en el home)**
+
+**groups**
+
+Crear un grupo que tenga acceso a la carpeta compartida
+
+Logger como root y crear la carpeta “shared”
+
+**mkdir shared**
+
+Ver los archivos.
+
+**ls -l**
+
+Ver en qué grupo está, en los detalles y hay que cambiar el **owner**
+
+CAmbiar de Owner a la carpeta shared
+
+**chgrp friends /shared/**
+
+CAmbiar los permisos de directorio
+
+**chmod {per.ucuario}{per.grupo}{per.otros} /{carpeta-name}/**
+
+**chmod 770 /shared/**
+
+ver como quedo 
+
+**ls -l**
+
+Agregar que el grupo realice acciones especiales, esto es para que cualquier archivo que cree en ese folder conserve su permisos del grupo
+
+**chmod +s /shared**
+
+Agregar usuarios a este grupo(aG: addGroup)
+
+**usermod -aG {name-grupo} {name-user}**
+
+**usermod -aG friends fulano**
+
+**usermod -aG friends perengano**
+
+Ingresar como fulano
+
+**su fulano**
+
+ver sus grupos
+
+**groups**
+
+crear un mensaje en la carpeta /shared
+
+**echo “hola soy fulano” > mesage.txt**
+
+si se creo en otra carpeta por error: se debe de cambiar la carpeta 
+
+**mv mesage.txt /shared**
+
+Ingresar con perengano
+
+**su perengano**
+
+ver el archivo compartido
+
+**cat /shared/mesage.txt**
+
+Ahora eliminar grupo y permisos
+
+iniciar con root:
+
+**gpasswd -d {-name-user-} {name-group}**
+
+**gpasswd -d perengano friends**
+
+verificar si esta en el grupo de friends
+
+**getent group {name-group}**
+
+**getent group friends**
+
+Eliminar el grupo de amigos (friends)
+
+**groupdel {name-group}**
+
+**groupdel friends**
+
+Verificar grupos, ver si se eliminó
+
+**cat /etc/group**
+
+Clase:
+
+**<code>groupadd groupname</code></strong>: crear nuevo grupo
+
+**<code>groupdel groupname</code></strong>: eliminar grupo
+
+**<code>groupmod -n newGroupName oldGroupName</code></strong>: cambiar el nombre de un grupo
+
+**<code>usermod -aG groupname username</code></strong>: agregar usuario existente a grupo existente
+
+**<code>useradd username -m -g groupname</code></strong>: crear usuario y asignarlo a un grupo, -m crea el directorio personal y -g asigna el usuario a un grupo ya creado
+
+**<code>gpaswd -d username groupname</code></strong>: quitar usuario de un grupo
+
+**<code>mkdir shared</code></strong>: crear carpeta
+
+**<code>ls -la</code></strong>: ver permisos de las carpetas
+
+**<code>chgrp groupname /shared/</code></strong>: asignar carpeta a grupo
+
+**<code>chmod 770 /shared/</code></strong>: cambiar permisos, todos los permisos al owner, todos al grupo y denegar acceso a todos los que no pertenezcan al grupo
+
+**<code>chmod +s /shared/</code>:</strong> asignar permisos especiales, cualquier archivo que creemos dentro del directorio se va a crear con el group owner
+
+**<code>less /etc/group | grep username</code></strong>: buscar usuario especifico dentro de los grupos
+
+**<code>less /etc/group</code></strong>: listar grupos
+
+**<code>ls</code></strong>: listar directorio actual
+
+**<code>ls /home</code>:</strong> listar un directorio especifico
+
+**<code>if config</code>:</strong> configuracion de red
+
+**<code>ssh username@ip</code>:</strong> conexion por ssh
+
+**<code>cat /etc/passwd</code>:</strong> ver archivo donde estan los usuarios
+
+**<code>less /etc/shadow</code>:</strong> ver usuarios con su contraseña de forma cifrada (podemos usar tanto less o cat)
+
+**<code>su username</code>:</strong> cambiarse de usuario
+
+**<code>pwd</code></strong>: nombre del directorio actual
+
+**<code>adduser username</code></strong>: agregar nuevo usuario
+
+**<code>whoami</code></strong>: ver usuario actual
+
+**<code>id</code></strong>: ver info del usuario (uid,gid,groups)
+
+**<code>chfn username</code></strong>: cambiar informacion del usuario
+
+**<code>usermod --lock username</code></strong>: bloquear usuario (accesos futuros)
+
+**<code>htop</code></strong>: ver todos los procesos actuales (podemos ver los procesos referentes a un usuario) con F9 matamos el proceso por ejemplo los que aparecen con ssh
+
+**<code>deluser username</code>:</strong> eliminar un usuario (aunque la carpeta en home permanece)
+
+**<code>rm -rf /home/username/</code></strong>: eliminar un directorio como la carpeta del usuario
+
+
+# **Control de accesos**
+
+
+## **Control de accesos en Linux**
+
+Linux todo lo ve como un objeto, el control de acceso depende del usuario
+
+La cuenta **root **puede acceder a cualquier objeto. 
+
+No acceder directamente a **root**, mejor usar **su**.
+
+Dar permisos de administrador solo a los usuarios necesarios.
+
+Revocar accesos de administrador después de cierto tiempo.
+
+
+## **Creación de un usuario administrador**
+
+Ingresar con el usuario perengano.
+
+**su perengano**
+
+Si queremos ver todos los usuarios 
+
+**sudo cat /etc/passwd**
+
+
+
+* No le dejara ver el archivo porque no tiene permisos de administrador
+
+Agregar usuario como grupo adminitrador
+
+Iniciar como root:
+
+**su root**
+
+Agregar a perengano a grupo sudo
+
+**usermod -aG sudo perengano**
+
+verificar si esta en el grupo sudo
+
+**getent group sudo**
+
+Ver el archivo suder, para ver que personas estan ahi.
+
+**sudo less /etc/sudoers**
+
+Para poder editar el archivo sudoers.
+
+**sudo visudo**
+
+
+# Almacenamiento
+
+
+## **Particionando y montando una unidad**
+
+Agregar un disco virtual de “Respaldo”
+
+
+
+* Apagar la máquina virtual.
+* Ve al virtual box, y a la sección de **Configuraciones -> Almacenamiento**
+* Selecciona controlador SATA, luego icono “Añadir disco duro”
+* Debe de seleccionar Disco -VDI
+* Disco de tipo dinámico.
+* Colocar 10GB, luego seleccionarlo.
+
+Iniciar la maq. virtual
+
+Conectarte como ssh
+
+Para ver el disco duro
+
+**lsblk**
+
+saber donde se encuentra, y como acceder al nuevo disco
+
+**fdisk -l**
+
+
+
+<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image7.png "image_tooltip")
+
+
+Nos colocamos en la partición
+
+Para crear particiones, y vemos que estan en **/dev/sdb**
+
+ver la herramiento fdisk
+
+**sudo fdisk /dev/sdb**
+
+para ver todas las opciones ingresa
+
+**m** (menu)
+
+listar los tipos particiones 
+
+**l **(listar)
+
+Para crear una nueva partición
+
+**n** 
+
+Escoge el typo:
+
+**p**
+
+Partition number: default 1 
+
+**(enter)**
+
+First Sector: default enter
+
+**(enter)**
+
+Last Sector, tamaño:
+
+**+3G** (aquí le damos 3GB)
+
+--se logro la partición 
+
+para ver las particiones:
+
+**p**
+
+Crear una nueva partición n2 (7 Gigabytes)
+
+**n** 
+
+Escoge el typo:
+
+**p**
+
+Partition number: default 1 
+
+**(enter)**
+
+First Sector: default enter
+
+**(enter)**
+
+Last Sector, tamaño:
+
+**+7G** (aquí le damos 3GB) o (enter) para que tome el resto
+
+--se logro la partición 
+
+para ver las particiones:
+
+**p**
+
+Se ve tenemos todas las particiones 
+
+Para aplicar las particiones en el disco escribir:
+
+**w**
+
+salir del programa.
+
+Formatear la partición
+
+ver nuestras particiones
+
+**lsblk**
+
+
+    _Try: sudo apt install &lt;deb name>_
+
+
+    _alexjair@ubuntuserver:~$ lsblk_
+
+
+    _NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS_
+
+
+    _loop0    7:0    0  53,2M  1 loop /snap/snapd/18933_
+
+
+    _loop1    7:1    0  63,3M  1 loop /snap/core20/1822_
+
+
+    _loop2    7:2    0  49,8M  1 loop /snap/snapd/18357_
+
+
+    _loop3    7:3    0    73M  1 loop /snap/core22/607_
+
+
+    _loop4    7:4    0  63,3M  1 loop /snap/core20/1852_
+
+
+    _loop5    7:5    0  20,7M  1 loop /snap/nvim/2797_
+
+
+    _loop6    7:6    0 111,9M  1 loop /snap/lxd/24322_
+
+
+    _sda      8:0    0    25G  0 disk_
+
+
+    _├─sda1   8:1    0     1M  0 part_
+
+
+    _└─sda2   8:2    0    25G  0 part /_
+
+
+    _sdb      8:16   0    10G  0 disk_
+
+
+    _├**─sdb1   8:17   0     3G  0 part**_
+
+
+    **_└─sdb2   8:18   0     7G  0 part_**
+
+
+    _sr0     11:0    1  1024M  0 rom_
+
+Para formatear una partición:
+
+**mkfs.ext4 /dev/sdb1**
+
+Ahora 
+
+Montar la Unidad
+
+Deben de ir al root
+
+**cd /**
+
+Crear un directorio “scripts” ahi vamos a montar la partición sdb1
+
+**sudo mkdir scripts**
+
+Montar la unidad
+
+**sudo mount /dev/sdb1 /scripts**
+
+**sudo mount {-dirección-partición-} {-directorio-donde -montar-}**
+
+Ahora escribir un archivo en unidad
+
+**sudo vim /scripts/hola.py**
+
+
+
+* dentro del archivo: script(“hola mundo”)
+
+ejecutar el script
+
+**python3 /scripts/hola.py**
+
+Desmontar el sistema de archivos
+
+**sudo umount /dev/sdb1**
+
+verificar si esta desmontado
+
+**ls /scripts/**
+
+
+
+* no muestra nada
+
+Para montar de nuevo
+
+**sudo mount /dev/sdb1 /scripts**
+
+verificar
+
+**ls /scripts/**
+
+Montar nuestro file system al inicio del arranque de sistema.
+
+**sudo vim /etc/fstab**
+
+
+
+<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image8.png "image_tooltip")
+
+
+para ver si realizo los cambios.
+
+**sudo reboot **(reinicia el servidor)
+
+“Si el filesystem no se guardó bien o no se editó correctamente, puedes entrar en modo recovery con super usuario y arreglarlo”
+
+ver si se montó bien
+
+**lsblk**
+
+**ls /scripts**
+
+
+
+<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image9.png "image_tooltip")
+
+
+
+## ¿Qué es RAID y LVM?
+
+**Raid** : 
+
+Redundant Array of Independent Disks:
+
+Permite crear un arreglo de discos para realizar redundancia, que si uno de nuestros discos se estropea los otros tienen una copia exacta.
+
+
+
+<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image10.png "image_tooltip")
+
+
+**LVM:**
+
+Logical Volume Manager.
+
+Monta sobre el mismo, en el “volumen lógico”, ahí donde trabaja crea sectores de 10GB o 5GB, varios discos volúmenes. Todos se trabajan sobre un dispositivo disco físico. 
+
+
+
+<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image11.png "image_tooltip")
+
+
+
+# **Proyecto 1: LVM sobre RAID 1**
+
+
+## **Creación de sistema RAID 1**
+
+Creamos 2 discos nuevos para los RAID de 5GB en el virtual Box, que se dinamico.
+
+
+
+<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image12.png "image_tooltip")
+
+
+Iniciamos nuestro servidor de ubuntu.
