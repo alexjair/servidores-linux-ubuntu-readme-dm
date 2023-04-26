@@ -4,59 +4,12 @@ Apuntes de Configuracion de **Servidor en Linux**, todos las distribuciones prob
 
 - Autor: Alexander Jair Rojas Paria
 --------------
+<!-- Copy and paste the converted output. -->
 
-<!-- Output copied to clipboard! -->
-
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+<!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
-* ALERTS: 12
-
-Conversion time: 4.798 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Mon Apr 24 2023 20:15:18 GMT-0700 (PDT)
-* Source doc: Servidores Linux
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 7 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 12.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
+* ALERTS: 32 -->
 
 
 # 📱 Servidores Linux
@@ -578,26 +531,14 @@ En general, el árbol de directorios en Linux está diseñado para proporcionar 
 Tipos de permisos
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.jpg "image_tooltip")
  \
 Permisos y atributos
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.jpg "image_tooltip")
  \
 Permisos en sistema de archivos
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image3.jpg "image_tooltip")
@@ -827,10 +768,6 @@ Ver los procesos con información en caliente
 **top**
 
 **htop  **(versión mejorada)
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image4.png "image_tooltip")
@@ -1228,10 +1165,6 @@ En otra terminal ejecutar, para ver los ejemplos de crontap
 **less /etc/crontab**
 
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image5.png "image_tooltip")
 
 
@@ -1286,16 +1219,14 @@ Carga del boot loader: Es el Carga Arranque del Sistema (si tenemos múltiples s
 
 **Inicia el sistema:** inicia la ventana Login.
 
-
-## **Firmware del sistema**
+**Firmware del sistema**
 
 
 
 * Hace un inventario y chequeo de todos los dispositivos conectados al sistema al momento del arranque (discos, memorias, etc.)
 * Este a su vez crea interfaces para que el software del sistema operativo pueda usar estos dispositivos.
 
-
-## **Boot Loader** 
+**Boot Loader** 
 
 Separa el firmware del sistema y el arranque del sistema operativo. Es un paso previo a que se ejecute el sistema operativo. 
 
@@ -1303,14 +1234,48 @@ Es útil para correr el SO en forma de rescate o con parámetros extra, t**ambie
 
 Es el boot loader **(GRUB: the GRand Unified Boot loader)** por defecto en la mayoría de distribuciones Linux. Actualmente contamos con dos versiones: ● GRUB Legacy ● GRUB 2
 
-
-## **BIOS:**
+BIOS:
 
 **UEFI:**
 
 Utiliza un Sistema de particiones,  para ordenar las particiones, y si puede ser modificada por S.O. superior.
 
 Entre los beneficios del modo de inicio UEFI sobre el modo de inicio Legacy BIOS, se incluyen: Compatibilidad para particiones de unidades de disco duro superiores a 2 Tbytes. Compatibilidad para más de cuatro particiones por unidad. Inicio rápido.
+
+
+## **Modo recovery:**
+
+Para entrar al modo recovery:
+
+**reinicia reboot el sistema**
+
+**mantén presionado SHIFT**
+
+mostrará la pantalla de recovery
+
+
+![alt_text](images/image6.png "image_tooltip")
+
+
+
+![alt_text](images/image7.png "image_tooltip")
+
+
+Se ve la versión del kernel 5.15.0-70,
+
+Si quieres evitar las opciones de arranque, y editar presione **“e”**
+
+**Entrar: (RECOVERY MODE)**
+
+
+![alt_text](images/image8.png "image_tooltip")
+
+
+Para salir: **resume**
+
+Para liberar un poco el espacio: **clear**
+
+Info de sistema: **system-sumary**
 
 
 ## **Resumen:**
@@ -1320,6 +1285,9 @@ Cuando se enciende un ordenador, la **BIOS **se ejecuta y verifica que todos los
 Una vez que el **bootloader **ha cargado el sistema operativo, lo primero que se ejecuta es el **kernel**, que es el encargado de administrar los recursos del sistema. Cuando el **kernel **ha cargado, se ejecuta **Init**, que es el primer proceso que realiza el sistema operativo. Este se encarga de iniciar todos los procesos necesarios para el correcto funcionamiento del sistema operativo.
 
 Luego, cuando el **sistema operativo** ha cargado sus procesos, se carga el entorno gráfico, que es la **interfaz **que los nosotros como usuarios vemos y con la que interactuamos.
+
+
+# **Grupos y usuarios**
 
 
 ## **Grupos y Usuarios en Linux**
@@ -1350,9 +1318,6 @@ Archivos
 * Si contiene un símbolo de exclamación **!** ha sido bloqueado
 
 Grupos: Agrupan usuario y conjunto de permisos, estos son muy usados por servicios como demonios, docker, postgres, etc
-
-
-# **Grupos y usuarios**
 
 
 ## **Manejo Usuarios en Linux**
@@ -1448,11 +1413,7 @@ Ver procesos para kill el proceso ssh de Fulano
 →con **F9 **matamos el proceso
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image9.png "image_tooltip")
 
 
  \
@@ -1847,11 +1808,7 @@ saber donde se encuentra, y como acceder al nuevo disco
 **fdisk -l**
 
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image10.png "image_tooltip")
 
 
 Nos colocamos en la partición
@@ -2046,11 +2003,7 @@ Montar nuestro file system al inicio del arranque de sistema.
 **sudo vim /etc/fstab**
 
 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 
 
 para ver si realizo los cambios.
@@ -2066,11 +2019,7 @@ ver si se montó bien
 **ls /scripts**
 
 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](images/image12.png "image_tooltip")
 
 
 
@@ -2083,11 +2032,7 @@ Redundant Array of Independent Disks:
 Permite crear un arreglo de discos para realizar redundancia, que si uno de nuestros discos se estropea los otros tienen una copia exacta.
 
 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
 **LVM:**
@@ -2097,27 +2042,446 @@ Logical Volume Manager.
 Monta sobre el mismo, en el “volumen lógico”, ahí donde trabaja crea sectores de 10GB o 5GB, varios discos volúmenes. Todos se trabajan sobre un dispositivo disco físico. 
 
 
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 
 # **Proyecto 1: LVM sobre RAID 1**
 
 
-## **Creación de sistema RAID 1**
+## **Creación Sistema RAID 1**
 
 Creamos 2 discos nuevos para los RAID de 5GB en el virtual Box, que se dinamico.
 
 
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/image15.png "image_tooltip")
 
 
 Iniciamos nuestro servidor de ubuntu.
+
+
+
+* Verificamos los discos.
+* **sdc      8:32   0     5G  0 disk**
+* **sdd      8:48   0     5G  0 disk**
+
+Crear la particiones de nuestros discos
+
+Abrir la herramiento fdisk para **sdc **
+
+**sudo fdisk /dev/sdc **
+
+Para crear una nueva partición
+
+**n** 
+
+Escoge el typo:
+
+**p**
+
+Partition number: default 1 
+
+**(enter)**
+
+First Sector: default enter
+
+**(enter)**
+
+Last Sector, tamaño:
+
+**(enter)**
+
+Para aplicar las particiones en el disco escribir:
+
+**w**
+
+Realizar el mismo proceso para **sdd **
+
+**…**
+
+Luego ver como quedo nuestros discos
+
+**lsblk**
+
+
+![alt_text](images/image16.png "image_tooltip")
+
+
+Crear nuestro Arreglo RAID
+
+Instalamos la herramienta para medios
+
+**apt install mdadm**
+
+ver manual de mdadm
+
+**man mdadm**
+
+**mdadm -h**
+
+Realizar el arreglo RAID
+
+**mdadm --create /dev/md0 --level=1 --raid-devices={--cantidad-discos--} /dev/sd[{--última letras-discos-involucrados--}]**
+
+**mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sd[cd]**
+
+
+
+* sd[cd] puede varias por los nombres de los discos (sdc,sdd)
+* **?yes**
+
+
+![alt_text](images/image17.png "image_tooltip")
+
+
+para ver lista:
+
+**lsblk**
+
+
+![alt_text](images/image18.png "image_tooltip")
+
+
+ver los detalles de nuestro RAID nuevo: **md0**
+
+**mdadm --misc --detail /dev/md0**
+
+
+## Creación LVM sobre RAID 1
+
+Instalar el paquete lvm2
+
+**sudo apt install lvm2**
+
+El raid ya está creado en **md0 **raid1
+
+Opción help
+
+**lvm --help**
+
+Crear lvm en md0
+
+**pvcreate /dev/md0**
+
+
+![alt_text](images/image19.png "image_tooltip")
+
+
+Para ver dispositivos físicos para lvm:
+
+**pvdisplay**
+
+
+![alt_text](images/image20.png "image_tooltip")
+
+
+lvm los ve como los 2 discos de 5GB como menos de 5Gb por la redundancia, en realidad de 10gb son 5, y un poco menor de 5gb xq raid una un poco de disco para su configuración.
+
+Crear el grupo de volumenes:
+
+**vgcreate {-nombre-grupo-volumenes-} /dev/md0**
+
+**vgcreate volumegroup /dev/md0** 
+
+para ver como quedo
+
+**vgdisplay**
+
+
+![alt_text](images/image21.png "image_tooltip")
+
+
+Ahora que tenemos nuestro “**volumegroup**” de donde vamos a crear los volúmenes más pequeños, porque “**volumegroup**” es nuestro disco más grande de donde vamos a redimensionar.
+
+Crear los mini discos volúmenes
+
+**lvcreate --name &lt;nombre-del-volumen> --size &lt;tamano> &lt;nombre-del-vg>**
+
+**lvcreate --name {--nombre-disco--} --size {-tamaño-disco-} {--name-grupo-lv--}**
+
+**lvcreate --name private --size 1GB volumegroup **(privado)
+
+**lvcreate --name public --size 3,99GB volumegroup **(publico)
+
+Ver la tabla de particiones
+
+**lsblk**
+
+
+![alt_text](images/image22.png "image_tooltip")
+
+
+
+## **Agregando el sistema a fstab**
+
+Ya tenemos nuestras unidades sectores lógicas, solo falta montar en nuestro sistema, la ubicación donde van a estar y que formato, el formato recomendado es el **ext4** , luego agregar **fstab**
+
+Ver la dirección de los volúmenes
+
+**fdisk -l**
+
+Formato a los discos virtuales
+
+**mkfs.ext4 /dev/volumegroup/public**
+
+**mkfs.ext4 /dev/volumegroup/private**
+
+Montar los discos, puede montar en cualquier sitio, para el ejemplo se monta en root 
+
+Vamos a carpeta root
+
+**cd /**
+
+**mkdir public**
+
+**mkdir private**
+
+**mount /dev/volumegroup/public /public**
+
+verificar
+
+**touch /public/archivo_publico.txt**
+
+**ls /public/**
+
+desmontar
+
+**umount /dev/volumegroup/public /public**
+
+**ls /public/**
+
+Montar en fstab los discos (private y public)
+
+**vim /etc/fstab**
+
+
+
+* editar el archivo, agregar la siguiente línea
+* **/dev/volumegroup/public	/public		ext4	default	0	0**
+* **/dev/volumegroup/private	/private	ext4	default	0	0**
+* ESC|:wq
+
+Reiniciar 
+
+**reboot**
+
+Esperamos reiniciar
+
+Ingresamos con ssh, y colocamos en carpera root
+
+**cd /**
+
+ver las und montadas
+
+**ls /public/**
+
+**ls /private/**
+
+
+# **Proyecto 2: Recuperar GRUB**
+
+
+## **Preparando el sistema**
+
+Como práctica se va a romper el GRUB 
+
+Vemos el grub
+
+**cat /boot/grub/grub.cfg**
+
+ver las carpetas en el grub
+
+**ls /boot/grub**
+
+Cambiar de nombre grub o renombrar se usa mv 
+
+**sudo mv /boot/grub/grub.cfg /boot/grub/grub.cfg.bck**
+
+Reiniciar el serv
+
+**reboot**
+
+**sudo reboot**
+
+
+![alt_text](images/image23.png "image_tooltip")
+
+
+Se rompió el grub.
+
+
+## **Escalando el sistema con chroot e instalando Grub**
+
+Contexto: Es utilizar el disco de Ubuntu Server de misma versión que nuestro Sistema, para poder usar los archivos del disco live, y reparar el grub, para esto tb hay adicional los archivos de configuración y programas instalados y unirlos a los archivos de nuestro live, todo ubicados en una carpeta diferente, cuando esten listos, de ahi copiarlos a la carpeta de sistema de linux.
+
+Para reparar el ubuntu server.
+
+
+
+1. insertar img live de ubuntu server de nuestro mismo sistema.
+
+    
+![alt_text](images/image24.png "image_tooltip")
+
+
+
+Luego iniciamos el maq. virtual
+
+
+
+* Colocar la prioridad de arranque en la MVirtual.
+* Cuando esté en la ventana de idioma.
+
+	**Press CTRL + Alt + ( F3 o F2)** para entrar a la consola.
+
+Lo primero es colocar, cambiar contraseña al usuario root para utlizarlo
+
+**sudo passwd**
+
+
+
+* Colocar new password y ingresar a root
+
+Luego ingresamos como root
+
+**sudo root**
+
+**cd**
+
+**pwd**
+
+Ver los discos para ver donde esta nuestros archivos de sistema
+
+**fdisk -l | less**
+
+
+![alt_text](images/image25.png "image_tooltip")
+
+
+Aquí se muestra dónde está nuestro, “Linux filesystem” , buscaminas **sda2. **xq ahi esta los archivos donde vamos a realizar la reparación de nuestro sistema.
+
+Ahora ver los archivos de nuestro root, para realizar un montaje. mount.
+
+**cd /**
+
+**ls**
+
+Verificamos la carpeta mnt
+
+Debemos buscar la carpeta “mnt”
+
+
+![alt_text](images/image26.png "image_tooltip")
+
+
+ 
+
+Ver lo que contiene mnt
+
+**ls /mnt**
+
+Verificamos que está vacío..y ahí montamos **sda2**
+
+**mount /dev/sda2 /mnt**
+
+ver los archivos de mnt
+
+**ls /mnt**
+
+Ya estan monster los archivos corruptos en la unidad vacia, ahora a trabajarlos
+
+
+![alt_text](images/image27.png "image_tooltip")
+
+
+ver el grup corrupto dir
+
+**ls /mnt/boot/grub/**
+
+ 
+
+Realizar un montaje de todo el sistema para la reparación.
+
+Para eso realizar un **BIND (Unir)**
+
+Montar carpetas.
+
+**mount -o bind /dev/ /mnt/dev**
+
+**mount -o bind /dev/pts /mnt/dev/pts**
+
+**mount -o bind /proc/ /mnt/proc**
+
+**mount -o bind /run /mnt/run**
+
+**mount -o bind /sys /mnt/sys**
+
+Ver el grub original del live
+
+**ls /boot/grub**
+
+
+![alt_text](images/image28.png "image_tooltip")
+
+
+Cambio de root:
+
+Hay utilidad, el root para cambiar el root, ahora estamos en el root del disco live, ahora a cambiar el root para nuestro sistema corrupto.
+
+**chroot {--dir-donde-el-sistema-a-montar--} /bin/bash**
+
+**chroot /mnt/ /bin/bash**
+
+Verificar si estamos en el root
+
+**/boot/**
+
+**ls /boot/grub**
+
+Se ve el grub dir ya unido y en el root de nuestro sistema corrupto
+
+
+![alt_text](images/image29.png "image_tooltip")
+
+
+Volver a generar el grub 
+
+**grub-mkconfig -o /boot/grub/grub.cfg**
+
+
+![alt_text](images/image30.png "image_tooltip")
+
+
+Vemos el grub generado:
+
+
+![alt_text](images/image31.png "image_tooltip")
+
+
+“Si el kernel esta malo, debemos solucionar eso, cambiar la version de kernel, después generamos el grub”
+
+Para instalar nuestro grub:
+
+**grub-install --boot-directory=/boot/ --recheck /dev/sda**
+
+
+![alt_text](images/image32.png "image_tooltip")
+
+
+**exit**
+
+**exit**
+
+**exit**
+
+**CRTL+Alt+F1**
+
+volvemos al inicio de instalación
+
+reiniciamos sin el disco de instalación
+
+En el virtual box..
+
+Quitar el disco inicio live..
+
+Iniciar el sistema
