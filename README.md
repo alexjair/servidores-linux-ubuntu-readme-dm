@@ -4,92 +4,123 @@ Apuntes de Configuracion de **Servidor en Linux**, todos las distribuciones prob
 
 - Autor: Alexander Jair Rojas Paria
 --------------
+
 <!-- Copy and paste the converted output. -->
 
 <!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
-* ALERTS: 32 -->
+* ALERTS: 43 -->
+
+
+# Servidores Linux
 
 
 # 📱 Servidores Linux
 
 
-## Roles de un Administrador
+## **Roles de un Administrador**
 
-
-#### Habilidades clave:
+Habilidades clave:
 
 
 
 * Control de accesos.
 * Monitoreo del sistema.
 * Administración de recursos.
-* Troubleshooting.
+* **_Troubleshooting_**. (Habilidad de Solucionar problemas)
 * Instalación y mantenimiento de software.
 * Creación de respaldos.
 * Documentación.
-* 
 
-
-#### **Roles que puedes desempeñar:**
+Roles que puedes desempeñar:
 
 
 
-* DevOps Engineer:
+* **DevOps Engineer**:
     * Se enfocan en los procesos y metodologías para la correcta liberación en el proceso de desarrollo de software.
-* Site Reliability Engineer:
+* **Site Reliability Enginee**r:
     * Se enfocan en que los sistemas de software operen de manera correcta y con el mayor grado de confiabilidad posible.
-* Security Operations Engineer:
+* **Security Operations Engineer**:
     * Encargados de mantener la seguridad de los sistemas a nivel de red y aplicaciones.
-* Algunos otros roles:
+* **Algunos otros roles**:
     * Network Engineer.
-    * Database Administrator.
+    * Database Admnistrator.
     * Network Operation Center Engineer.
     * MLOps Engineer.
     * Cloud Engineer.
 
 
-## **Servidores?**
+## **¿Qué son los servidores?**
 
-Son computadoras especializadas que almacenan y distribuyen información y servicios a otras computadoras en una red. Se utilizan para alojar sitios web, correo electrónico, aplicaciones, bases de datos, juegos en línea, entre otros. \
-Además, también pueden ser utilizados para procesar información y realizar tareas complejas que requieren mucha potencia de procesamiento.
+Un servidor es un tipo de computadora que se utiliza para proporcionar servicios y recursos a otras computadoras y dispositivos en una red. Los servidores pueden estar diseñados para manejar tareas específicas, como almacenar y compartir archivos, alojar sitios web o aplicaciones, administrar bases de datos o proporcionar servicios de correo electrónico.
+
+**Tipos de Servidores**
+
+Hay varios tipos de servidores según su función y su arquitectura, entre ellos:
+
+
+
+* Servidores de** archivo (File servers)**: almacenan y comparten archivos y carpetas con los usuarios de la red.
+* Servidores** web (Web servers)**: alojan sitios web y aplicaciones web.
+* Servidores de** correo electrónico** (Mail servers): gestionan y distribuyen el correo electrónico entre los usuarios de la red.
+* Servidores de **bases de datos** (Database servers): administran y proporcionan acceso a bases de datos para aplicaciones y usuarios.
+* Servidores de **aplicaciones **(Application servers): ejecutan aplicaciones de software para clientes y usuarios.
+* Servidores de **juegos **(Game servers): alojan juegos en línea y permiten a los usuarios jugar en línea con otros jugadores.
+* Servidores **proxy **(Proxy servers): actúan como intermediarios entre los clientes de la red y los servidores externos para mejorar la seguridad, el rendimiento y el acceso a Internet.
+* Servidores de **impresión **(Print servers): gestionan y comparten recursos de impresión en la red.
+* Servidores **DNS **(DNS servers): proporcionan servicios de resolución de nombres de dominio para los clientes de la red.
+* Servidores de **almacenamiento **(Storage servers): ofrecen almacenamiento en red a los usuarios y otros servidores.
+* Servidores de **streaming **(Streaming servers): transmiten audio y video a través de la red.
+* Servidores de **mensajería **(Messaging servers): permiten la comunicación instantánea y el intercambio de mensajes entre usuarios de la red.
+* Servidores de **backup **(Backup servers): crean y almacenan copias de seguridad de datos de otros servidores y dispositivos en la red.
+* Servidores de **virtualización **(Virtualization servers): permiten la creación y gestión de máquinas virtuales en la red.
+* Servidores de **autenticación **(Authentication servers): proporcionan servicios de autenticación y autorización para los usuarios y dispositivos de la red.
+* Servidores de **gestión de redes** (Network management servers): supervisan y administran la red y sus dispositivos.
+* Servidores de **VoIP (VoIP servers)**: permiten la comunicación de voz sobre IP (VoIP) entre usuarios de la red.
 
 
 ## **Sistema Linux/UNIX**
 
-_OS (Sistema Operativo) = Windows, MacOS, GNU/Linux -> GNU/Linux = Linux (Kernel) + GNU (GNU’s Not Unix") -> Linux = Distribuciones_
+OS (Sistema Operativo) = Windows, MacOS, GNU/Linux 
+
+GNU/Linux = Linux (Kernel) + GNU  
+
+GNU = (GNU’s Not Unix") -> Linux = Distribuciones
+
+**Distribuciones para Servidores**
 
 
-#### **Distribuciones para Servidores**
 
-
-
-* CentOS: Derivada del código fuente de Red Hat Enterprise Linux (RHEL). Es muy estable y está diseñada para ser utilizada en entornos empresariales y de servidores.
-* Ubuntu Server: es una versión de Ubuntu diseñada específicamente para su uso en servidores. Ofrece una combinación de facilidad de uso y estabilidad.
+* **CentOS**: Derivada del código fuente de Red Hat Enterprise Linux (RHEL). Es muy estable y está diseñada para ser utilizada en entornos empresariales y de servidores.
+* **Ubuntu Server**: es una versión de Ubuntu diseñada específicamente para su uso en servidores. Ofrece una combinación de facilidad de uso y estabilidad.
 * Debian: es una distribución de GNU/Linux muy estable y confiable que es muy popular entre los administradores de sistemas.
-* Fedora Server: Impulsada por la comunidad que se enfoca en la innovación y la adopción temprana de nuevas tecnologías.
-* Arch Linux: es una distribución muy personalizable y dirigida a usuarios avanzados. Es muy popular entre los administradores de sistemas que prefieren una configuración a medida.
+* **Fedora Serve**r: Impulsada por la comunidad que se enfoca en la innovación y la adopción temprana de nuevas tecnologías.
+* **Arch Linux**: es una distribución muy personalizable y dirigida a usuarios avanzados. Es muy popular entre los administradores de sistemas que prefieren una configuración a medida.
 * 
 
 
-## **Arquitectura de un Sistema**
+## **Arquitectura de UNIX/Linux**
 
 Es a la estructura y organización interna del sistema operativo. Diseñada para proporcionar una base sólida y segura para la ejecución de aplicaciones y procesos.
 
-
-#### **Componentes principales**
-
+**Componentes principales**
 
 
-* Hardware \
+
+* **Hardware** \
 Son todos los dispositivos físicos conectados al sistema (discos, mouse, memoria, procesador, teclado, etc.).
-* Kernel \
+* **Kernel** \
 Es una pieza de software que nos permite controlar todo el hardware de nuestro servidor, como el uso de CPU o memoria RAM.
-* Shell \
+* **Shell** \
 Es la interfaz que está entre el kernel y el usuario. Es quien nos permite ejecutar comandos y pasarlos a un sistema de bajo nivel.
-* Aplicaciones \
-Es donde el usuario directamente interactúa. Es la capa donde trabajan nuestros comandos y aplicaciones.
+* **Aplicaciones** \
+Es donde el usuario directamente interactúa. Es la capa donde trabajan nuestros comandos y aplicaciones
+
+
+## 
+![alt_text](images/image1.png "image_tooltip")
+
 
 
 ## **Diferencias entre: Software Libre y Open Source**
@@ -156,7 +187,7 @@ Es donde el usuario directamente interactúa. Es la capa donde trabajan nuestros
 
 
 
-## **Sistemas operativos y distribuciones**
+## **Sistemas operativos y distribuciones GNU**
 
 Una distribución de Linux es una variante de Linux creada por una organización o comunidad específica que toma el kernel de Linux y lo combina con otras aplicaciones y herramientas de software para crear un sistema operativo completo. Las distribuciones de Linux pueden variar en características, propósitos y enfoques.
 
@@ -164,7 +195,8 @@ Hay muchas distribuciones de Linux disponibles, y algunas de las más populares 
 
 **Rolling Release:**
 
-*Arch Linux \
+
+    *Arch Linux \
 *Gentoo \
 *Solus \
 *Manjaro \
@@ -172,49 +204,48 @@ Hay muchas distribuciones de Linux disponibles, y algunas de las más populares 
 
 **Fixed Release:**
 
-*Debian \
+
+    *Debian \
 *Ubuntu \
 *CentOS \
 *Fedora \
 *Red Hat Enterprise Linux (RHEL)
 
-Las **distribuciones de Rolling Release** reciben actualizaciones continuas y no tienen versiones específicas. Las actualizaciones se entregan a medida que se lanzan y se prueban. 
+**Distribuciones de Rolling Release** reciben actualizaciones continuas y no tienen versiones específicas. Las actualizaciones se entregan a medida que se lanzan y se prueban. 
 
-Las **distribuciones de Fixed Release**, por otro lado, tienen una versión específica que se lanza en un momento determinado y reciben actualizaciones de seguridad y mantenimiento regulares, pero no se actualizan con nuevas características de forma regular.
-
-
-## **¿Dónde viven Servidores?**
-
-Las ventajas que tenemos con un servicio en la nube, bien sea como persona natural o como empresa, es ahorrar dolores de cabeza con daños en los discos duros, tener preocupación por realizar copias de seguridad de los archivos de forma constante, y preocupación por recuperación de datos. \
-los servicios en la nube, son realmente eficientes y tienen herramientas con gran poder que nos facilita mucho la vida.
+**Distribuciones de Fixed Release**, por otro lado, tienen una versión específica que se lanza en un momento determinado y reciben actualizaciones de seguridad y mantenimiento regulares, pero no se actualizan con nuevas características de forma regular.
 
 
+## **¿Dónde viven nuestros servidores?**
 
-* Alojamiento: \
-**On Premise: ** Todo el hardware y software del servidor es alojado y mantenido por la organización. \
-**Cloud: **Es una empresa que ofrece la arquitectura y estructura, y yo solo me encargo de administrar el servidor. o Nube Pública: o Nube Privada: Todos los servicios pueden estar en otro lugar, pero los recursos utilizados por una empresa no pueden ser compartidos con otra empresa, por ejemplo, un disco duro dedicado alojar datos de la empresa. \
-**Hibrid (Hídrida):  **Es una combinación de los servicios premise y cloud. Data Center: lugar para almacenar servidores.
+Las ventajas que tenemos con un servicio en la nube, bien sea como persona natural o como empresa, es ahorrar dolores de cabeza con daños en los discos duros, tener preocupación por realizar copias de seguridad de los archivos de forma constante, y preocupación por recuperación de datos.
+
+Tipos \
+•** On Premise**: Todo el hardware y software del servidor es alojado y mantenido por la organización. \
+• **Cloud**: es una empresa que ofrece la arquitectura y estructura, y yo solo me encargo de administrar el servidor. \
+o **Nube Pública: \
+**o **Nube Privada:** Todos los servicios pueden estar en otro lugar, pero los recursos utilizados por una empresa no pueden ser compartidos con otra empresa, por ejemplo, un disco duro dedicado alojar datos de la empresa. \
+o **Hibrid (Hídrida)**: Es una combinación de los servicios **premise **y **cloud**. \
+o **Data Center**: lugar para almacenar servidores.
 
 
-## Formas de montar un servidor
+## **Formas de montar un servidor**
 
 🚀 Hay varias formas de montar un servidor Linux, dependiendo de las necesidades y recursos de cada organización. Algunas de las formas comunes de montar un servidor Linux son las siguientes:
 
 
 
-1. Servidores físicos: Consiste en instalar Linux en un servidor físico en las instalaciones de la organización. Este enfoque puede ser más adecuado para organizaciones que tienen un alto nivel de control sobre el hardware y la seguridad del servidor.
-2. Servidores virtuales: Consiste en instalar Linux en una máquina virtual que se ejecuta en un servidor físico. Este enfoque puede ser más adecuado para organizaciones que necesitan flexibilidad y escalabilidad, pero que no tienen los recursos para adquirir y administrar un servidor físico.
-3. Servidores en la nube: Consiste en instalar Linux en un servidor virtual alojado en la nube de un proveedor de servicios en la nube. Este enfoque puede ser más adecuado para organizaciones que desean acceso remoto, escalabilidad y flexibilidad sin tener que administrar su propio hardware.
-4. Contenedores: Consiste en utilizar tecnología de contenedores para alojar aplicaciones en Linux. Los contenedores pueden ser más eficientes que las máquinas virtuales porque comparten recursos de hardware, lo que significa que pueden alojar más aplicaciones en un solo servidor.
-5. Kubernetes: Consiste en utilizar una plataforma de orquestación de contenedores como Kubernetes para gestionar y escalar contenedores en un clúster de servidores Linux.
+1. **Servidores físicos:** Consiste en instalar Linux en un servidor físico en las instalaciones de la organización. Este enfoque puede ser más adecuado para organizaciones que tienen un alto nivel de control sobre el hardware y la seguridad del servidor.
+2. **Servidores virtuales**: Consiste en instalar Linux en una máquina virtual que se ejecuta en un servidor físico. Este enfoque puede ser más adecuado para organizaciones que necesitan flexibilidad y escalabilidad, pero que no tienen los recursos para adquirir y administrar un servidor físico.
+3. **Servidores en la nub**e: Consiste en instalar Linux en un servidor virtual alojado en la nube de un proveedor de servicios en la nube. Este enfoque puede ser más adecuado para organizaciones que desean acceso remoto, escalabilidad y flexibilidad sin tener que administrar su propio hardware.
+4. **Contenedores**: Consiste en utilizar tecnología de contenedores para alojar aplicaciones en Linux. Los contenedores pueden ser más eficientes que las máquinas virtuales porque comparten recursos de hardware, lo que significa que pueden alojar más aplicaciones en un solo servidor.
+5. **Kubernetes**: Consiste en utilizar una plataforma de orquestación de contenedores como Kubernetes para gestionar y escalar contenedores en un clúster de servidores Linux.
 
-Cada uno de estos enfoques tiene sus propias ventajas y desventajas, y la elección depende de las necesidades específicas de la organización, como la escalabilidad, la flexibilidad y el control sobre el hardware y la seguridad del servidor.
+
+# Instalación y configuración
 
 
 ## **Instalar Virtualbox en Linux 🐧**
-
-
-### **Si tú, como yo, eres usuario Ubuntu te dejaré una pequeña guía de cómo instalarlo.**
 
 (Si utilizas otra distribución, puedes expandir este aporte con tu distribución y cómo instalar virtualbox).
 
@@ -225,7 +256,7 @@ Cada uno de estos enfoques tiene sus propias ventajas y desventajas, y la elecci
 
 Nota: es muy importante tener en cuenta que si tu país no cumple con los requisitos políticos para adquirir servicios de Oracle, te recomiendo utilizar una VPN para poder descargar este programa. (🇻🇪🇨🇺🇳🇮)
 
-Una vez estándo en la lista, debes elegir la opción que dice: Linux distributions
+Una vez estando en la lista, debes elegir la opción que dice: Linux distributions
 
 
 
@@ -235,25 +266,75 @@ Una vez estándo en la lista, debes elegir la opción que dice: Linux distributi
 1. Para instalarla de forma gráfica, solamente debes pulsar _click derecho > abrir con otra aplicación > Instalar software_ Y te abrirá una forma gráfica de instalar.
 
 7.1. O también la puedes instalar por la terminal con este comando \
-`sudo dpkg -i virtualbox-7.0 \
-`Por supuesto el nombre del paquete debe de ser idéntico a como está descargado.
-
-
-#### **Espero les sirva y les sea de mucha utilidad. 👍**
+**<code>sudo dpkg -i virtualbox-7.0 \
+</code></strong>Por supuesto el nombre del paquete debe de ser idéntico a como está descargado.
 
 
 ## **Instalar Ubuntu Server ISO**
 
 [https://ubuntu.com/download/server](https://ubuntu.com/download/server)
 
-Usar Virtual Box
+Usar **Virtualbox**
+
+Configurar el entorno de Red:
 
 
-## **Error 1 al instalar**
+![alt_text](images/image2.png "image_tooltip")
 
-vbo error kernel driver not installed (rc=-1908) virtualbox
 
-solución:
+Inicia la instalacion 
+
+
+![alt_text](images/image3.png "image_tooltip")
+
+
+Selecciona que teclado que usas:
+
+
+![alt_text](images/image4.png "image_tooltip")
+
+
+ Vemos la ip correct**a**
+![alt_text](images/image5.png "image_tooltip")
+
+
+Servidor Proxy, si se tiene se inegrasa.
+
+
+![alt_text](images/image6.png "image_tooltip")
+
+
+Sin LVM. es para discos lógicos.
+
+
+![alt_text](images/image7.png "image_tooltip")
+
+
+
+![alt_text](images/image8.png "image_tooltip")
+
+
+
+![alt_text](images/image9.png "image_tooltip")
+
+
+
+![alt_text](images/image10.png "image_tooltip")
+
+
+Dar enter en Reiniciar Ahora
+
+
+![alt_text](images/image11.png "image_tooltip")
+
+
+**Caso: Error 1 al instalar**
+
+
+
+* vbo error kernel driver not installed (rc=-1908) virtualbox
+
+**solución:**
 
 actualizamos el sistema
 
@@ -281,7 +362,7 @@ ejecutamos la autoconfiguración de vbox como administrador
 Y ya tenemos todos los problemas resueltos
 
 
-## **Configuración básica para un servidor remoto**
+## **SSH Configuración Servidor Remoto**
 
 Comandos: \
 ssh: lo usamos para confirmar que tengamos instalado openssh en el sistema, en caso de no estar instalado podemos instalarlo con el comando:
@@ -327,6 +408,9 @@ curl ifconfig.me
 
 
 Es importante tener en cuenta que para poder tener este acceso, se debe tener abierto a la red el puerto de internet número 22, adicionalmente es una buena práctica utilizar un firewall para que solo ciertas IPs puedan conectarse al servidor y así evitar accesos no autorizados.
+
+
+# **Sistemas de archivos y particionamiento**
 
 
 ## **¿Qué son los sistemas de archivos?**
@@ -531,18 +615,21 @@ En general, el árbol de directorios en Linux está diseñado para proporcionar 
 Tipos de permisos
 
 
-![alt_text](images/image1.jpg "image_tooltip")
+![alt_text](images/image12.jpg "image_tooltip")
  \
 Permisos y atributos
 
 
-![alt_text](images/image2.jpg "image_tooltip")
+![alt_text](images/image13.jpg "image_tooltip")
  \
 Permisos en sistema de archivos
 
 
-![alt_text](images/image3.jpg "image_tooltip")
+![alt_text](images/image14.jpg "image_tooltip")
 
+
+
+# **Software Instalación y Manejo **
 
 
 ## **¿Qué es un manejador de paquetes?**
@@ -698,6 +785,9 @@ Listar con expresion regular los paquetes
     **sudo apt update**
 
 
+# **Procesos en Linux**
+
+
 ## **¿Qué es un proceso en Linux?**
 
  Linux Process States
@@ -770,7 +860,7 @@ Ver los procesos con información en caliente
 **htop  **(versión mejorada)
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image15.png "image_tooltip")
 
 
 
@@ -1165,7 +1255,7 @@ En otra terminal ejecutar, para ver los ejemplos de crontap
 **less /etc/crontab**
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 Continuar editando el crontap:
@@ -1254,11 +1344,11 @@ Para entrar al modo recovery:
 mostrará la pantalla de recovery
 
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image17.png "image_tooltip")
 
 
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image18.png "image_tooltip")
 
 
 Se ve la versión del kernel 5.15.0-70,
@@ -1268,7 +1358,7 @@ Si quieres evitar las opciones de arranque, y editar presione **“e”**
 **Entrar: (RECOVERY MODE)**
 
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image19.png "image_tooltip")
 
 
 Para salir: **resume**
@@ -1290,7 +1380,7 @@ Luego, cuando el **sistema operativo** ha cargado sus procesos, se carga el ento
 # **Grupos y usuarios**
 
 
-## **Grupos y Usuarios en Linux**
+## **Grupos y Usuarios**
 
 **Usuario:** \
 Nos permite separar las responsabilidades y permisos de acciones en el sistema. Dependiendo los permisos que tengan son las acciones que podrán ejecutar.
@@ -1320,7 +1410,7 @@ Archivos
 Grupos: Agrupan usuario y conjunto de permisos, estos son muy usados por servicios como demonios, docker, postgres, etc
 
 
-## **Manejo Usuarios en Linux**
+## **Manejo Usuarios**
 
 Con el comando se bloquee a un usuario:
 
@@ -1413,7 +1503,7 @@ Ver procesos para kill el proceso ssh de Fulano
 →con **F9 **matamos el proceso
 
 
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](images/image20.png "image_tooltip")
 
 
  \
@@ -1428,6 +1518,23 @@ Por ejemplo los que aparecen con ssh
 Ver los usuarios que tengo
 
 **ls /home**
+
+
+## **Usuario con privilegios ROOT**
+
+Comando añadir usuario
+
+**sudo adduser {--nombreusuario--}**
+
+**sudo /usr/sbin/visudo**
+
+En este fichero, añadimos después de la línea donde pone ‘root’, el nombre de nuestro usuario, con las líneas de ALL iguales.
+
+
+
+* # User privilege specification
+* root            ALL=(ALL:ALL) ALL 
+* **{--nombreusuario--}	ALL=(ALL:ALL) ALL**
 
 
 ## **Manejo de grupos**
@@ -1808,7 +1915,7 @@ saber donde se encuentra, y como acceder al nuevo disco
 **fdisk -l**
 
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](images/image21.png "image_tooltip")
 
 
 Nos colocamos en la partición
@@ -2003,7 +2110,7 @@ Montar nuestro file system al inicio del arranque de sistema.
 **sudo vim /etc/fstab**
 
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/image22.png "image_tooltip")
 
 
 para ver si realizo los cambios.
@@ -2019,7 +2126,7 @@ ver si se montó bien
 **ls /scripts**
 
 
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/image23.png "image_tooltip")
 
 
 
@@ -2032,7 +2139,7 @@ Redundant Array of Independent Disks:
 Permite crear un arreglo de discos para realizar redundancia, que si uno de nuestros discos se estropea los otros tienen una copia exacta.
 
 
-![alt_text](images/image13.png "image_tooltip")
+![alt_text](images/image24.png "image_tooltip")
 
 
 **LVM:**
@@ -2042,7 +2149,7 @@ Logical Volume Manager.
 Monta sobre el mismo, en el “volumen lógico”, ahí donde trabaja crea sectores de 10GB o 5GB, varios discos volúmenes. Todos se trabajan sobre un dispositivo disco físico. 
 
 
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](images/image25.png "image_tooltip")
 
 
 
@@ -2054,7 +2161,7 @@ Monta sobre el mismo, en el “volumen lógico”, ahí donde trabaja crea secto
 Creamos 2 discos nuevos para los RAID de 5GB en el virtual Box, que se dinamico.
 
 
-![alt_text](images/image15.png "image_tooltip")
+![alt_text](images/image26.png "image_tooltip")
 
 
 Iniciamos nuestro servidor de ubuntu.
@@ -2104,7 +2211,7 @@ Luego ver como quedo nuestros discos
 **lsblk**
 
 
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/image27.png "image_tooltip")
 
 
 Crear nuestro Arreglo RAID
@@ -2131,7 +2238,7 @@ Realizar el arreglo RAID
 * **?yes**
 
 
-![alt_text](images/image17.png "image_tooltip")
+![alt_text](images/image28.png "image_tooltip")
 
 
 para ver lista:
@@ -2139,7 +2246,7 @@ para ver lista:
 **lsblk**
 
 
-![alt_text](images/image18.png "image_tooltip")
+![alt_text](images/image29.png "image_tooltip")
 
 
 ver los detalles de nuestro RAID nuevo: **md0**
@@ -2164,7 +2271,7 @@ Crear lvm en md0
 **pvcreate /dev/md0**
 
 
-![alt_text](images/image19.png "image_tooltip")
+![alt_text](images/image30.png "image_tooltip")
 
 
 Para ver dispositivos físicos para lvm:
@@ -2172,7 +2279,7 @@ Para ver dispositivos físicos para lvm:
 **pvdisplay**
 
 
-![alt_text](images/image20.png "image_tooltip")
+![alt_text](images/image31.png "image_tooltip")
 
 
 lvm los ve como los 2 discos de 5GB como menos de 5Gb por la redundancia, en realidad de 10gb son 5, y un poco menor de 5gb xq raid una un poco de disco para su configuración.
@@ -2188,7 +2295,7 @@ para ver como quedo
 **vgdisplay**
 
 
-![alt_text](images/image21.png "image_tooltip")
+![alt_text](images/image32.png "image_tooltip")
 
 
 Ahora que tenemos nuestro “**volumegroup**” de donde vamos a crear los volúmenes más pequeños, porque “**volumegroup**” es nuestro disco más grande de donde vamos a redimensionar.
@@ -2208,7 +2315,7 @@ Ver la tabla de particiones
 **lsblk**
 
 
-![alt_text](images/image22.png "image_tooltip")
+![alt_text](images/image33.png "image_tooltip")
 
 
 
@@ -2304,7 +2411,7 @@ Reiniciar el serv
 **sudo reboot**
 
 
-![alt_text](images/image23.png "image_tooltip")
+![alt_text](images/image34.png "image_tooltip")
 
 
 Se rompió el grub.
@@ -2321,7 +2428,7 @@ Para reparar el ubuntu server.
 1. insertar img live de ubuntu server de nuestro mismo sistema.
 
     
-![alt_text](images/image24.png "image_tooltip")
+![alt_text](images/image35.png "image_tooltip")
 
 
 
@@ -2355,7 +2462,7 @@ Ver los discos para ver donde esta nuestros archivos de sistema
 **fdisk -l | less**
 
 
-![alt_text](images/image25.png "image_tooltip")
+![alt_text](images/image36.png "image_tooltip")
 
 
 Aquí se muestra dónde está nuestro, “Linux filesystem” , buscaminas **sda2. **xq ahi esta los archivos donde vamos a realizar la reparación de nuestro sistema.
@@ -2371,7 +2478,7 @@ Verificamos la carpeta mnt
 Debemos buscar la carpeta “mnt”
 
 
-![alt_text](images/image26.png "image_tooltip")
+![alt_text](images/image37.png "image_tooltip")
 
 
  
@@ -2391,7 +2498,7 @@ ver los archivos de mnt
 Ya estan monster los archivos corruptos en la unidad vacia, ahora a trabajarlos
 
 
-![alt_text](images/image27.png "image_tooltip")
+![alt_text](images/image38.png "image_tooltip")
 
 
 ver el grup corrupto dir
@@ -2421,7 +2528,7 @@ Ver el grub original del live
 **ls /boot/grub**
 
 
-![alt_text](images/image28.png "image_tooltip")
+![alt_text](images/image39.png "image_tooltip")
 
 
 Cambio de root:
@@ -2441,7 +2548,7 @@ Verificar si estamos en el root
 Se ve el grub dir ya unido y en el root de nuestro sistema corrupto
 
 
-![alt_text](images/image29.png "image_tooltip")
+![alt_text](images/image40.png "image_tooltip")
 
 
 Volver a generar el grub 
@@ -2449,13 +2556,13 @@ Volver a generar el grub
 **grub-mkconfig -o /boot/grub/grub.cfg**
 
 
-![alt_text](images/image30.png "image_tooltip")
+![alt_text](images/image41.png "image_tooltip")
 
 
 Vemos el grub generado:
 
 
-![alt_text](images/image31.png "image_tooltip")
+![alt_text](images/image42.png "image_tooltip")
 
 
 “Si el kernel esta malo, debemos solucionar eso, cambiar la version de kernel, después generamos el grub”
@@ -2465,7 +2572,7 @@ Para instalar nuestro grub:
 **grub-install --boot-directory=/boot/ --recheck /dev/sda**
 
 
-![alt_text](images/image32.png "image_tooltip")
+![alt_text](images/image43.png "image_tooltip")
 
 
 **exit**
